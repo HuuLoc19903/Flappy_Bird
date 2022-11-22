@@ -68,7 +68,7 @@ void drawPipe(int ind){
 			gotoxy(WIN_WIDTH-pipePos[ind],i+1); cout<<"***"; 
 		}
 		for(int i=gapPos[ind]+GAP_SIZE; i<SCREEN_HEIGHT-1; i++){ 
-			gotoxy(WIN_WIDTH-pipePos[ind],i+1); cout<<"***"; 
+			gotoxy(WIN_WIDTH-pipePos[ind],i+1); cout<<"***";
 		}
 	} 
 }
@@ -122,7 +122,8 @@ void gameover(){
 	getch();
 }
 void updateScore(){
-	gotoxy(WIN_WIDTH + 7, 5);cout<<"Score: "<<score<<endl;
+	gotoxy(WIN_WIDTH + 7, 5);
+	cout<<"Score: "<<score<<endl;
 }
 
 void instructions(){
